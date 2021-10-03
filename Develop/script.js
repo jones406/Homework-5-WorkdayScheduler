@@ -1,19 +1,31 @@
 // Global Variables
-let saveBtnEl = $(".saveBtn");
-let descriptionEl = $(".description");
-let hourEl = $(".hour");
+let saveBtnEl = $(".saveBtn"); //selects all instances of class = "saveBtn"
+let descriptionEl = $(".description");//selects all instances of class = "desription"
+let hourEl = $(".hour");//selects all instances of class = "hour"
 
-// event listner on save button that console.logs the value of the textarea
+
+//grab the current date and display it in the header within the p tag with the id of currentDay
+let dateTime = moment().format('LLLL');   
+console.log(dateTime);
+displaydateTime = $("#currentDay").text(dateTime);
+
+
 $(document).ready(function() { // makes js wait until DOM is loaded
 
+let timeComparison = 
+}
+
 })
 
+
+//save text from time block in local storage when save button clicked
 saveBtnEl.click(function() { // we attach this to each element in the .each() method
   console.log(descriptionEl.val());
-  localStorage.setItem("task9", descriptionEl.val())
+  localStorage.setItem("task", descriptionEl.val())
 })
 
-//there are multiple save buttons and multiple descriptionEls
+
+//problem: there are multiple save buttons and multiple descriptionEls
 
 $(".row").each(function(index, element) {
   console.log("index", index)
@@ -24,7 +36,13 @@ $(".row").each(function(index, element) {
   // attach event listener
 })
 
+
+
+// use jquery to grab all elements on page by class and loop thru them... and then affect their css that way, in that loop. Use data attributes wisely...put a lot of info in your HTML so you can use jquery -->
+
 // jQuery .each() method
+ 
+//styling example: grabbedElVariable.style.color = "color"
 
 // if (localStorage.getItem("task")) {
 //   console.log("true")
@@ -38,11 +56,11 @@ $(".row").each(function(index, element) {
 //   {ten: ""},
 //   {eleven: ""},
 //   {twelve: ""},
-//   {one: ""},
-//   {two: ""},
-//   {three: ""},
-//   {four: ""},
-//   {five: ""}
+//   {thirteen: ""},
+//   {fourteen: ""},
+//   {fifteen: ""},
+//   {sixteen: ""},
+//   {seventeen: ""}
 // ]
 
 
