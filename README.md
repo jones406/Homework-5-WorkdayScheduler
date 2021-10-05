@@ -36,4 +36,4 @@ THEN the saved events persist
 ```
 
 Screenshot of webpage:
-![Coding Quiz Webpage](./assets/screengrab_webpage.png)
+![Coding Quiz Webpage](./Assets/screengrab_webpage.png)
