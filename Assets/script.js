@@ -32,14 +32,28 @@ $(".row").each(function (index, element) { //grab each element w/ this class
 })
 
 //styling example: grabbedElVariable.style.color = "color"
-function timeChecker(node) {
-  if ($(node).attr("data-hour") < moment().format('HH')) {
-      ($(node).attr("data-hour").css("background-color", "gray");
-  } else if ($(node).attr("data-hour") === moment().format('HH')) {
-    ($(node).attr("data-hour").css("background-color", "red");
-  }  else ($(node).attr("data-hour") > moment().format('HH')) {
-  ($(node).attr("data-hour").css("background-color", "green");
-  }
-    console.log($(node).attr("data-hour"))
-    console.log(moment().format('HH'))
-  }
+// function timeChecker(node) {
+//   if ($(node).attr("data-hour") < moment().format('HH')) {
+//       ($(node).attr("data-hour").css("background-color", "gray");
+//   } else if ($(node).attr("data-hour") === moment().format('HH')) {
+//     ($(node).attr("data-hour").css("background-color", "red");
+//   }  else {
+//     ($(node).attr("data-hour") > moment().format('HH')) 
+//   ($(node).attr("data-hour").css("background-color", "green");
+//   }
+//     console.log($(node).attr("data-hour"))
+//     console.log(moment().format('HH'))
+//   }
+
+  function timeChecker(node) {
+    console.log(node)
+    if ($(node).attr("data-hour") < moment().format('HH')) {
+        $("input").css("background-color", "gray")
+    } else if ($(node).attr("data-hour") === moment().format('HH')) {
+      $("input").css("background-color", "red")
+    }  else if ($(node).attr("data-hour") > moment().format('HH')) {
+      $("input").css("background-color", "green")
+    }
+      console.log($(node).attr("data-hour"))
+      console.log(moment().format('HH'))
+    }
