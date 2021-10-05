@@ -15,7 +15,7 @@ $(".row").each(function (index, element) { //grab each element w/ this class
   console.log("index", index) // creates an index number for as many divs that have class="row". Spits out 0-8
   console.log($(element).children("button"))
   console.log($(element).children("input"))
-  
+
   timeChecker(element); //run the timeChecker fn
 
   // setting inputs with saved tasks
@@ -34,10 +34,12 @@ $(".row").each(function (index, element) { //grab each element w/ this class
 //styling example: grabbedElVariable.style.color = "color"
 function timeChecker(node) {
   if ($(node).attr("data-hour") < moment().format('HH')) {
-
+      ($(node).attr("data-hour").css("background-color", "gray");
+  } else if ($(node).attr("data-hour") === moment().format('HH')) {
+    ($(node).attr("data-hour").css("background-color", "red");
+  }  else ($(node).attr("data-hour") > moment().format('HH')) {
+  ($(node).attr("data-hour").css("background-color", "green");
   }
-
-
     console.log($(node).attr("data-hour"))
     console.log(moment().format('HH'))
   }
