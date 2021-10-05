@@ -1,4 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
+- URL: (https://jones406.github.io/Homework-5-WorkdayScheduler/)
+- Version 1.0 Deployment Date: 10/04/2021 
+- Contributors: Brooke Jones, Tyler Arthur (tutor)
 
 ## Purpose
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
@@ -32,7 +35,5 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-#
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
+Screenshot of webpage:
+![Coding Quiz Webpage](./assets/screengrab_webpage.png)
